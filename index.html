@@ -1,9 +1,156 @@
-<html>
-		<head>
-				<title>Coming Soon...</title>
-		</head>
-		<body>
-				<p>PubMedQA homepage is currently under construction. Sorry for any inconvenience.</p>
-				<p>You may take a look at the dataset: <a href='https://github.com/pubmedqa/pubmedqa'>https://github.com/pubmedqa/pubmedqa</a>.</p>
-		</body>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PubMedQA Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/pubmedqa.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">PubMedQA</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('img/background.png')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>PubMedQA</h1>
+          <span class="subheading">A Dataset for Biomedical Research Question Answering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    
+<!-- Main Content -->
+<div class="container" id="main">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="list-group">
+        <div class="list-group-item"><h4>About</h4>
+        <p></p>
+        <p>The task of PubMedQA is to answer research questions with yes/no/maybe (e.g.: <i>Do preoperative statins reduce atrial fibrillation after coronary artery bypass grafting?</i>) using the corresponding abstracts. </p>
+        <p>For more details about PubMedQA, please refer to this paper:</p>
+        <p class="text-center">
+          <a href="https://arxiv.org/abs/1909.06146"><button type="button" class="btn btn-info">PubMedQA Paper (EMNLP'19)</button></a>
+        </p>
+        </div>
+        <div class="list-group-item"><h4>Dataset</h4>
+        <p>PubMedQA has 1k expert labeled, 61.2k unlabeled and 211.3k artificially generated QA instances. </p>
+        <p>Please visit our GitHub repository to download the dataset:</p>
+        <p class="text-center">
+          <a href="https://github.com/pubmedqa/pubmedqa"><button type="button" class="btn btn-success">PubMedQA Data & Code Repository</button></a>
+        </p>
+        </div>
+        <div class="list-group-item"><h4>Submission</h4>
+        <p>To submit your model, please follow the instructions in the GitHub repository.</p>
+        </div>
+        <div class="list-group-item"><h4>Citation</h4>
+        <p>If you use PubMedQA in your research, please cite our paper by:</p>
+        <pre>
+@misc{jin2019pubmedqa,
+    title={PubMedQA: A Dataset for Biomedical Research Question Answering},
+    author={Qiao Jin and Bhuwan Dhingra and Zhengping Liu and William W. Cohen and Xinghua Lu},
+    year={2019},
+    eprint={1909.06146},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}</pre>
+    </div>
+  </div>
+</div>
+<div class="col-lg-7">
+  <div class="card card-outline-secondary">
+    <div class="card-header">
+      Leaderboard
+    </div>
+    <div class="card-body">
+      <table class="table table-responsive">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" rowspan=1></th>
+            <th scope="col" rowspan=1 class="align-middle text-center">Model</th>
+            <th scope="col" rowspan=1 class="align-middle text-center">Code</th>
+            <th scope="col" colspan=1 class='text-center'>Accuracy (%)</th>
+            <th scope="col" colspan=1 class='text-center'>Macro-F<sub>1</sub> (%)</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+            <td scope="row" class='align-middle text-center'>1<br>
+              <span class="badge badge-secondary">Sep 13, 2019</span></td>
+            <td class='align-middle text-center'>Human Performance (single annotator)<br/>
+              <span class="affiliation">University of Pittsburgh & Carnegie Mellon University</span><br/><a href="https://arxiv.org/abs/1909.06146" class="paperlink">(Jin et al. 2019)</a></td>
+            <td class='align-middle text-center'><a href="https://github.com/pubmedqa/pubmedqa"><i class="far fa-file-alt"></i></a></td>
+            <td class='align-middle text-center'>78.00</td>
+            <td class='align-middle text-center'>72.19</td>
+          </tr><tr style="background:#f4f4f4">
+            <td scope="row" class='align-middle text-center'>2<br>
+              <span class="badge badge-secondary">Sep 13, 2019</span></td>
+            <td class='align-middle text-center'>Baseline Model (single model)<br/>
+              <span class="affiliation">University of Pittsburgh & Carnegie Mellon University</span><br/><a href="https://arxiv.org/abs/1909.06146" class="paperlink">(Jin et al. 2019)</a></td>
+            <td class='align-middle text-center'><a href="https://github.com/pubmedqa/pubmedqa"><i class="far fa-file-alt"></i></a></td>
+            <td class='align-middle text-center'>68.08</td>
+            <td class='align-middle text-center'>52.72</td>
+          </tr></tbody>
+      </table>
+    </div>
+  </div>
+  
+  
+</div>
+</div>
+
+    <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="copyright text-muted">Leaderboard template kindly provided by the HotpotQA team.</p>
+            <p class="copyright text-muted">Theme adapted from Start Bootstrap's <a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> template.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+    
+
+  </body>
+
 </html>
